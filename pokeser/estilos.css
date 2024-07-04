@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    font-family: 'Silkscreen', sans-serif;
+    background-color: #27AE60;
+    /* background-image: url("https://i.pinimg.com/564x/35/27/92/35279239918e14099ee083e460525869.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+}
+
+.titulo{
+    color:azure;
+    font-size:64px;
+    text-align: center ;
+    justify-content: center;
+    width:320px;
+    height:64px;
+
+}
+.subtitulo{
+    color:rgb(255, 247, 0);
+    font-size:32px;
+
+}
+#ser{
+    
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#menu_ser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input:hover +label{
+    border: 4px solid #ED5AB3; 
+}
+input:checked + label{
+    border: 4px solid #ED5AB3; 
+    background: black; 
+}
+.cardser{
+    color:azure;
+    text-align: center;
+    background: rgba(52, 46, 56, 0.644);
+    width: 280px;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin:10px;
+    border: 4px solid rebeccapurple;
+    border-radius: 5px;
+
+}
+#boton_ser{
+    font-family: 'Silkscreen', sans-serif;
+    color: azure;
+    text-align: center;
+    background: rgba(52, 46, 56, 0.644);
+    height: 38px;
+    width: 200px;
+    border-radius: 10px;
+    border: 4px solid rebeccapurple;
+    margin: 20px;
+}
+#menu_ataque{
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.boton_a{
+display:inline-flex;
+font-family: 'Silkscreen', sans-serif;
+color: azure;
+text-align: center;
+border-radius: 10px;
+margin: 30px,30px,30px,30px;
+}
+#muerte{
+    background: rgba(52, 46, 56, 0.644);
+    border: 4px solid rgb(247, 41, 99);
+}
+#sonido{
+    background: rgba(52, 46, 56, 0.644);
+    border: 4px solid rebeccapurple;
+}
+#magico{
+    background: rgba(52, 46, 56, 0.644);
+    border: 4px solid rgb(154, 255, 149);
+}
+.cardataque{
+    color:azure;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid rgb(247, 189, 41);
+    background: rgba(52, 46, 56, 0.644);
+    height: 128px;
+    margin:20px,20px,0px,20px;
+}
+.info{
+    display: grid ;
+    grid-template-columns: 200px 200px;
+}
+.info_e , .info_j{
+    display:flex;
+    flex-direction: center;
+    align-items:center;
+
+}
+#v_j,#v_e{
+    font: size 32px;
+}
+#ser_aliado{
+    color:rgb(255, 7, 7);
+}
+#ser_ene{
+    color:rgb(123, 83, 255);
+}
+#mensajito{
+    color:azure;
+    text-align: center;
+    width: 500px;
+    background: rgba(52, 46, 56, 0.644);
+    border: 4px solid rgb(247, 189, 41); 
+    border-radius: 10px;
+}
+.imagenI{
+    width: 40px;
+    height: 40px;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.imagen{
+    width: 40px;
+    height: 40px;
+}
+.vida{
+    color: chartreuse;
+}
+#divisionA{
+    display:inline-flex;
+}
+#mensajitof{
+    color:azure;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+    background: rgba(52, 46, 56, 0.644);
+    border: 4px solid rgb(247, 189, 41); 
+    border-radius: 10px;
+    height: 80px;
+    margin:20px,40px,20px,20px;
+}
+#boton_reinicio{
+    display : flex;
+    font-family: 'Silkscreen', sans-serif;
+    color:azure;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    background: rgb(247, 189, 41);
+    border: 4px solid white; 
+    border-radius: 10px;
+}
+input{
+    display:none;
+}
+input:hover +label{
+    border: 4px solid #ED5AB3; 
+}
+input:checked + label{
+    border: 4px solid #ED5AB3; 
+    background: black; 
+}
+#c_mapa{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+#s_mapa{
+    flex-direction: column;
+    align-items: center;
+}
+#c_map{
+    border: 2px solid red;
+}
+
+@media (max-width:360px){
+    #ser{
+        flex-direction: column;
+    }
+}

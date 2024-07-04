@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PokeSer</title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head> 
+    <body>
+        <section id="ser">
+            <h1 id="testo" class="titulo">PokeSer</h1>
+            <h2 class="subtitulo">Elige tu Ser</h2>
+            <div id="menu_ser">
+            </div>
+            <button id="boton_ser">Seleccionar</button>
+        </section> 
+        <section id="s_mapa">
+            <h1 class="titulo">recorre el mapa con tu ser</h1>
+            <canvas id="c_map"></canvas>
+            <button onClick="arriba()">↑</button>
+            <div>
+            <button onClick="izquierda()">←</button>
+            <button onClick="abajo()">↓</button>
+            <button onClick="derecha()">→</button>
+            </div>
+        </section>
+        <section id="menu_ataque">
+            <h1 id="testo" class="titulo">PokeSer</h1>
+            <h2 class="subtitulo">Elige tu Ataque</h2>
+            <div id ="cont_ataques" class="ataques">
+            </div>
+            <div>
+                <section id="mensajito">
+                    <p></p>
+                </section>
+            </div>
+            <div id="divisionA">
+                <section id="mensajitof">
+                    <p></p>
+                </section>
+                <section id="reinicio">
+                    <button id="boton_reinicio">Reiniciar Duelo</button>
+                </section>
+            </div>
+            <div class="info">
+                <div class="info_j">
+                    <p class="cardataque" ><span id="ser_aliado"></span>
+                    <span id="v_j" class="vida"> 3 </span> vidas</p>
+                    <div id="ataque_jugador"></div>
+                </div>
+                <div clas="info_e">
+                    <p class="cardataque"><span id="ser_ene"></span>
+                    <span id="v_e"class="vida" > 3 </span> vidas</p>
+                    <div id="ataque_enemigo"></div>
+                </div>
+            </div>
+            <!--La Magia Vence La Muerte-->
+            <!--La Muerte Vence el Sonido-->
+            <!--El Sonido vence la magia-->
+        </section>
+        <script src="./js/pokeser.js"></script>
+    </body>
+</html>
